@@ -1,0 +1,307 @@
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} 
+
+html{
+    font-size: 87.5%; 
+}
+
+
+/* ----------------Header--------------------------- */
+header{
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.cabeçalho{
+    background-color: rgb(17, 9, 8);
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.logo{
+    width: 15%;
+    margin-left: 3rem;
+}
+
+ul{
+    display: flex;
+}
+
+header nav li{
+    list-style: none;
+    margin-right: 2rem;
+}
+
+header a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    padding: 0.6rem;
+    color: 0.1s linear 200ms;
+}
+
+header a:hover{
+    background-color: rgb(58, 219, 219);
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+} 
+
+#portada{
+    margin-top: 4rem;
+    height: 90%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+/* ---------------Main------------------------- */
+
+/* -------------Aside-------------------- */
+
+aside{
+    margin:4rem 0;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+.card h2{
+    margin: 1.5rem 0;
+    color: rgb(15, 13, 13);
+    font-size: 1.5rem;
+}
+
+aside .card{
+    width: 21%;
+    height: 100%;
+}
+
+.img-card{
+    width: 100%;
+    height: 60%;
+}
+
+.img-card img{
+    width: 100%;
+    height: 100%;
+} 
+
+
+
+.card p{
+    color: rgb(15, 13, 13);
+    font-size: 1rem;
+
+}
+
+/* ------------article---------------- */
+
+.lugares{
+    width: 100%;
+    height: 400px;
+    padding: 3rem 0 3.5rem 0;
+    background-color:rgb(39, 21, 16);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color: rgba(116, 79, 68, 0.733);
+}
+
+.lugares h2, #QuemSomos h2{
+    color:rgba(202, 146, 129, 0.815);
+    font-size: 1.5rem;
+}
+
+.lugares p{
+    font-size: 1rem;
+}
+
+.sec-lugares-letf{
+    width: 21%;
+    height: 100%;
+}
+
+.sec-lugares-letf div{
+    display: flex;
+    height: 20%;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.sec-lugares-letf div img{
+    margin-right: 0.8rem;
+    width: 26%;
+    height: 100%;
+}
+
+
+.sec-lugares-right{
+    width: 45%;
+    height: 100%;
+}
+
+.sec-lugares-right img{
+    margin-top: 2rem;
+    width: 100%;
+    height: 45%;
+}
+
+.sec-lugares-right p{
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+/* ---------Section Quem Somo------------ */
+
+.QuemSomos{
+    width: 100%;
+    height: 500px;
+    padding: 4rem 0;
+    background-color:  rgb(31, 19, 15);
+    display: flex;
+    justify-content: space-evenly;
+    color:  rgba(116, 79, 68, 0.733);
+}
+
+.letf{
+    width: 60%;
+}
+
+.letf p, .right p{
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.right{
+    width: 30%;
+}
+
+.right p{
+    line-height: 2.5rem;
+    text-decoration: underline;
+}
+
+/* -------------Footer------------- */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    background-color: rgb(14, 8, 7);
+    color:  rgba(116, 79, 68, 0.733);
+    font-size: 1rem;
+}
+
+@media(max-width: 600px){
+
+    html{
+        font-size: 93.75%;
+    }
+
+    header{
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .cabeçalho{
+        background-color: rgb(17, 9, 8);
+        position: fixed;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+    }
+    
+    .logo{
+        width: 30%;
+        margin-left: 3rem;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #portada{
+        margin-top: 8rem;
+        height: 60%;
+        width: 100%;
+        opacity: 0.8;
+        z-index: -1;
+    }
+
+    aside{
+        height: 650px;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        gap: 1rem 0;
+    }
+
+    aside .card{
+        width: 100%;
+        height: 50%;
+    }
+
+    .card h2{
+        margin: 1.5rem 0;
+        color: rgb(15, 13, 13);
+        font-size: 1.2rem;
+    }
+
+    .lugares{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .sec-lugares-letf{
+        width: 80%;
+        height: 30%;
+    }
+
+    .sec-lugares-right{
+        width: 80%;
+        height: 30%;
+    }
+
+    .QuemSomos{
+        height: 1100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .letf, .right{
+        width: 80%;
+        
+    }
+
+    /* .right{
+        height: 40%;
+    } */
+
+
+}
+
+
+
+
+
+
+
+

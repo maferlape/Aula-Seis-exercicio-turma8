@@ -5,115 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lugares para Visitar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header id="home">
-      <img src="" alt="LOGO">
+    <header id="home">
+        <div class="cabeçalho">
+            <img src="img/EnjoyNature.svg" alt="LOGO" class="logo">
 
-      <nav>
-          <a href="#home">Home</a> 
-          <a href="#portafolio">Portafolio</a>
-          <a href="#lugares">Lugares mais visitados</a>
-          <a href="#QuemSomos">Quem somos</a>
-      </nav>
-      <img src="img/Img-principal.jpg" alt="Imagen Principal" height="400" width="100%">
-  </header>
-  <main>
-      <aside id="portafolio">   
-          <article>
-            <img src="img/img1.jpg" alt="img1" height="250" width="300">
-            <h2>Primeiro Lugar</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-          </article>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#home">Home</a> </li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#lugares">Lugares mais visitados</a></li>
+                    <li><a href="#QuemSomos">Quem somos</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <img src="img/Img-principal.jpg" alt="Imagen Principal" id="portada">
+    </header>
 
-          <article>
-            <img src="img/img2.jpg" alt="img2" height="250" width="300">
-            <h2>Segundo Lugar</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-          </article>
+    <main>
+        <aside id="portafolio">   
+            <article class="card">
+                <div class="img-card">
+                    <img src="img/img1.jpg" alt="img1">
+                </div>
+                
+                <h2>Primeiro Lugar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio quam architecto beatae, distinctio velit explicabo delectus illo. Commodi, ipsum veritatis. </p>
+            </article>
 
-          <article>
-            <img src="img/img3.jpg" alt="img3" height="250" width="300">
-            <h2>Terceiro Lugar</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-          </article>
-
-          <article>
-            <img src="img/img4.jpg" alt="img4" height="250" width="300">
-            <h2>Quarto Lugar</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-          </article>
-      </aside>
-
-      <article id="lugares">
-            <section>
-                <h2>Qualquer lugar</h2>
-
-                <div>
-                    <img src="img/img5.jpg" alt="img5" height="60" width="60">
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <article class="card">
+                <div class="img-card">
+                    <img src="img/img2.jpg" alt="img2">
                 </div>
 
-                <div>
-                    <img src="img/img6.jpg" alt="img6" height="60" width="60">
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <h2>Segundo Lugar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptas! Vel saepe blanditiis ipsa fugit eligendi perspiciatis quaerat minima id?
+                </p>
+            </article>
+
+            <article class="card">
+                <div class="img-card">
+                    <img src="img/img3.jpg" alt="img3">
                 </div>
+                
+                <h2>Terceiro Lugar</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, aut saepe minima accusamus dolorem nostrum accusantium fugiat enim. Blanditiis, esse! </p>
+            </article>
 
-                <div>
-                    <img src="img/img7.jpg" alt="img7" height="60" width="60">
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <article class="card">
+                <div class="img-card">
+                    <img src="img/img4.jpg" alt="img1">
                 </div>
-            </section>
+                
+                <h2>Quarto Lugar</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate vel dolor praesentium, ut accusamus commodi magni eaque nisi a soluta? </p>
+            </article>
+        </aside>
 
-            <section>
+        <article id="lugares" class="lugares">
+                <section class="sec-lugares-letf">
+                    <h2>Qualquer lugar</h2>
 
-                <h2>Qualquer lugar</h2>
+                    <div>
+                        <img src="img/img5.jpg" alt="img5">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, quisquam?</p>
+                    </div>
 
-                <div>
-                    <img src="img/img8.jpg" alt="img8" height="60" width="60">
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
+                    <div>
+                        <img src="img/img6.jpg" alt="img6">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, numquam.</p>
+                    </div>
 
-                <div>
-                    <img src="img/img9.jpg" alt="img9" height="60" width="60">
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
+                    <div>
+                        <img src="img/img7.jpg" alt="img7" >
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quis.</p>
+                    </div>
+                </section>
 
-                <div>
-                    <img src="img/img10.jpg" alt="img10" height="60" width="60">
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-            
-            </section>
+                <section class="sec-lugares-letf">
 
-            <section>
+                    <h2>Qualquer lugar</h2>
 
-                <h2>Qualquer lugar</h2>
+                    <div>
+                        <img src="img/img8.jpg" alt="img8">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio?</p>
+                    </div>
 
-                <div>
+                    <div>
+                        <img src="img/img9.jpg" alt="img9">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, delectus!</p>
+                    </div>
+
+                    <div>
+                        <img src="img/img10.jpg" alt="img10">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nisi.</p>
+                    </div>
+                
+                </section>
+
+                <section class="sec-lugares-right">
+
+                    <h2>Qualquer lugar</h2>
+
                     <img src="img/img11.jpg" alt="img11" height="250" width="500">
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit similique dolore delectus quis dolor incidunt non nihil numquam repellat hic quo libero, adipisci quas nesciunt facere natus ea optio at blanditiis consequuntur, aspernatur id impedit nulla. Minus sapiente quod omnis. Est delectus aut illo saepe omnis aliquam alias minima porro.</p>
 
-            </section>  
-      </article>
-  </main>
+                </section>  
+        </article>
+    </main>
 
-  <section id="QuemSomos">
-      <div>
-          <h2>Quem Somos</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero molestias recusandae, iure dolore maxime minus quidem at officia in eius ex voluptate porro doloremque dolorum et quae nostrum harum nisi cumque amet architecto? Ut nostrum molestias necessitatibus, aut fuga repudiandae exercitationem voluptates dolore sapiente itaque cum pariatur, perspiciatis maxime. Mollitia ab animi qui quibusdam? </p>
-      </div>
+    <section id="QuemSomos" class="QuemSomos"> 
+        <div class="letf">
+            <h2>Quem Somos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing <strong>elit</strong>. Libero molestias recusandae, iure dolore maxime minus <strong>quidem</strong> at officia in eius ex voluptate porro doloremque dolorum et quae nostrum harum nisi cumque amet architecto? Ut nostrum molestias necessitatibus, aut fuga repudiandae <strong>exercitationem</strong> voluptates dolore sapiente itaque cum pariatur, perspiciatis maxime. Mollitia ab animi qui quibusdam? </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis est ad amet assumenda maiores vel temporibus officia laudantium, fugit animi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere debitis perspiciatis fugiat amet deleniti numquam cum soluta deserunt veritatis nobis reprehenderit quasi dolorum, ipsa sunt incidunt accusantium dolorem nesciunt doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod deserunt temporibus illo minus facilis a quasi officia consequatur itaque error quaerat, nulla optio ipsa facere distinctio fugiat? 
+            </p>
 
-      <div>
-          <h2>Reflexão Sobre a Natureza</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloremque soluta rem ea aliquam inventore architecto modi atque, in nesciunt, cum commodi magni ut ipsum rerum dicta aspernatur odio qui?</p>
-      </div>
-  </section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa optio quod quasi, voluptatem distinctio inventore molestias dignissimos quibusdam at necessitatibus voluptatum. Unde, perferendis.</p>
+        </div>
 
-  <footer>
-    &copy; Maria Lares | Maferlape
-  </footer>
+        <div class="right">
+            <h2>Reflexão Sobre a Natureza</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloremque soluta rem ea aliquam inventore architecto modi atque, in nesciunt, cum commodi magni ut ipsum rerum dicta aspernatur odio qui? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore pariatur ullam corporis.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; Maria Lares | Maferlape
+    </footer> 
       
 </body>
 </html>
