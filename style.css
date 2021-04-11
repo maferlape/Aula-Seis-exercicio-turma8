@@ -1,15 +1,17 @@
- *{
+*{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 } 
 
 html{
-    font-size: 87.5%; 
+    font-size: 93.75%;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
-
 /* ----------------Header--------------------------- */
+
 header{
     height: 500px;
     margin-bottom: 30px;
@@ -18,6 +20,7 @@ header{
 .cabeçalho{
     background-color: rgb(17, 9, 8);
     position: fixed;
+    top: 0;
     width: 100%;
     height: 20%;
     display: flex;
@@ -46,7 +49,7 @@ header a{
     font-weight: 700;
     color: white;
     padding: 0.6rem;
-    color: 0.1s linear 200ms;
+    transition: 2ms;
 }
 
 header a:hover{
@@ -96,8 +99,6 @@ aside .card{
     height: 100%;
 } 
 
-
-
 .card p{
     color: rgb(15, 13, 13);
     font-size: 1rem;
@@ -108,8 +109,8 @@ aside .card{
 
 .lugares{
     width: 100%;
-    height: 400px;
-    padding: 3rem 0 3.5rem 0;
+    height: 500px;
+    padding: 4rem 0;
     background-color:rgb(39, 21, 16);
     display: flex;
     align-items: flex-start;
@@ -144,7 +145,6 @@ aside .card{
     height: 100%;
 }
 
-
 .sec-lugares-right{
     width: 45%;
     height: 100%;
@@ -157,11 +157,11 @@ aside .card{
 }
 
 .sec-lugares-right p{
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     font-size: 1rem;
 }
 
-/* ---------Section Quem Somo------------ */
+/* ---------Section Quem Somos------------ */
 
 .QuemSomos{
     width: 100%;
@@ -197,41 +197,33 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 4rem;
+    height: 64px;
     background-color: rgb(14, 8, 7);
     color:  rgba(116, 79, 68, 0.733);
     font-size: 1rem;
+    font-weight: 600;
 }
+
+.ele-menu.on{
+    background-color: rgb(58, 219, 219);
+    border-radius: 0.3rem;
+}
+
 
 @media(max-width: 600px){
 
     html{
-        font-size: 93.75%;
+        font-size:  87.5%; 
     }
 
     header{
         height: 300px;
         margin-bottom: 30px;
     }
-
-    .cabeçalho{
-        background-color: rgb(17, 9, 8);
-        position: fixed;
-        width: 100%;
-        height: 20%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 2;
-    }
     
     .logo{
         width: 30%;
         margin-left: 3rem;
-    }
-
-    nav{
-        display: none;
     }
 
     #portada{
@@ -291,9 +283,83 @@ footer{
         
     }
 
-    /* .right{
-        height: 40%;
-    } */
+    nav{
+        display: none;
+    }
+
+    .menu-toggle{
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    .one, .two, .three{
+        background-color: #fff;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    /* -------fullscreen--------- */
+
+    .menu-section.on{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+
+        background-color: rgb(17, 9, 8);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        z-index: 10;
+    }    
+
+    .menu-section.on nav{
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle{
+        position: absolute;
+        right: 0;
+        top: 40px;
+    }
+
+    .menu-section.on .menu-toggle .one{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two{
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three{
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on nav ul{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-section.on nav ul li{
+        margin: 0;
+    }
+
+    .menu-section.on nav ul a{
+        transition-duration: 0.5s;
+        font-size: 1.5rem;
+        line-height: 4rem;
+        display: block;
+        padding:0 1rem;
+    }
 
 
 }

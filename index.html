@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <title>Lugares para Visitar</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,15 +13,22 @@
     <header id="home">
         <div class="cabeçalho">
             <img src="img/EnjoyNature.svg" alt="LOGO" class="logo">
+            <div class="menu-section">
+                <div class="menu-toggle on">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
 
-            <nav id="menu">
-                <ul>
-                    <li><a href="#home">Home</a> </li>
-                    <li><a href="#portafolio">Portafolio</a></li>
-                    <li><a href="#lugares">Lugares mais visitados</a></li>
-                    <li><a href="#QuemSomos">Quem somos</a></li>
-                </ul>
-            </nav>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="#home" class="ele-menu on">Home</a> </li>
+                        <li><a href="#portafolio" class="ele-menu">Portafolio</a></li>
+                        <li><a href="#lugares" class="ele-menu">Lugares mais visitados</a></li>
+                        <li><a href="#QuemSomos" class="ele-menu">Quem somos</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         
         <img src="img/Img-principal.jpg" alt="Imagen Principal" id="portada">
@@ -136,6 +145,8 @@
     <footer>
         &copy; Maria Lares | Maferlape
     </footer> 
+
+    <script src="/menu.js"></script>
       
 </body>
 </html>
