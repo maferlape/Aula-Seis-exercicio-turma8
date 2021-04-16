@@ -18,7 +18,7 @@ header{
 }
 
 .cabeçalho{
-    background-color: rgb(17, 9, 8);
+    background-color:#180E0C;
     position: fixed;
     top: 0;
     width: 100%;
@@ -115,16 +115,17 @@ aside .card{
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    color: rgba(116, 79, 68, 0.733);
+    color: #37201A;
 }
 
 .lugares h2, #QuemSomos h2{
-    color:rgba(202, 146, 129, 0.815);
+    color:#C27159;
     font-size: 1.5rem;
 }
 
 .lugares p{
     font-size: 1rem;
+    color: #7A503E;
 }
 
 .sec-lugares-letf{
@@ -173,8 +174,16 @@ aside .card{
     color:  rgba(116, 79, 68, 0.733);
 }
 
+.letf .parrafo{
+    color: #C27159;
+}
+
 .letf{
     width: 60%;
+}
+
+.letf p{
+    color: #7A503E;
 }
 
 .letf p, .right p{
@@ -187,8 +196,13 @@ aside .card{
 }
 
 .right p{
-    line-height: 2.5rem;
+    line-height: 0.5rem;
     text-decoration: underline;
+    color: #7A503E;
+}
+
+.right h2{
+    color: #C27159;
 }
 
 /* -------------Footer------------- */
@@ -198,9 +212,9 @@ footer{
     align-items: center;
     justify-content: center;
     height: 64px;
-    background-color: rgb(14, 8, 7);
-    color:  rgba(116, 79, 68, 0.733);
-    font-size: 1rem;
+    background-color: #180E0C;
+    color:  #7A503E;
+    font-size: 0.8rem;
     font-weight: 600;
 }
 
@@ -235,7 +249,7 @@ footer{
     }
 
     aside{
-        height: 650px;
+        height: 550px;
         display: grid;
         grid-template-columns: 40% 40%;
         gap: 1rem 0;
@@ -244,6 +258,7 @@ footer{
     aside .card{
         width: 100%;
         height: 50%;
+        margin-bottom: 1rem;
     }
 
     .card h2{
@@ -252,12 +267,15 @@ footer{
         font-size: 1.2rem;
     }
 
+    .card p{
+        font-size: 0.8rem;
+    }
+
     .lugares{
         width: 100%;
         display: flex;
         flex-direction: column;
-        height: 1200px;
-        /* justify-content: center; */
+        height: 1400px;
         align-items: center;
     }
 
@@ -272,10 +290,14 @@ footer{
     }
 
     .QuemSomos{
-        height: 1100px;
+        height: 1200px;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .QuemSomos h2{
+        margin-top: 2rem;
     }
 
     .letf, .right{
